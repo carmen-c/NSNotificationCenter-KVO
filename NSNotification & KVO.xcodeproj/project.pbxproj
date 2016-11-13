@@ -14,6 +14,7 @@
 		1F9782A81DD7E74B007EE757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9782A61DD7E74B007EE757 /* Main.storyboard */; };
 		1F9782AA1DD7E74B007EE757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9782A91DD7E74B007EE757 /* Assets.xcassets */; };
 		1F9782AD1DD7E74B007EE757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9782AB1DD7E74B007EE757 /* LaunchScreen.storyboard */; };
+		1F9782BC1DD83E4A007EE757 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9782BB1DD83E4A007EE757 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		1F9782A91DD7E74B007EE757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F9782AC1DD7E74B007EE757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F9782AE1DD7E74B007EE757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9782BA1DD83E4A007EE757 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		1F9782BB1DD83E4A007EE757 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				1F9782A11DD7E74B007EE757 /* FirstViewController.m */,
 				1F9782A31DD7E74B007EE757 /* SecondViewController.h */,
 				1F9782A41DD7E74B007EE757 /* SecondViewController.m */,
+				1F9782BA1DD83E4A007EE757 /* ThirdViewController.h */,
+				1F9782BB1DD83E4A007EE757 /* ThirdViewController.m */,
 				1F9782A61DD7E74B007EE757 /* Main.storyboard */,
 				1F9782A91DD7E74B007EE757 /* Assets.xcassets */,
 				1F9782AB1DD7E74B007EE757 /* LaunchScreen.storyboard */,
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9782A51DD7E74B007EE757 /* SecondViewController.m in Sources */,
+				1F9782BC1DD83E4A007EE757 /* ThirdViewController.m in Sources */,
 				1F97829F1DD7E74B007EE757 /* AppDelegate.m in Sources */,
 				1F9782A21DD7E74B007EE757 /* FirstViewController.m in Sources */,
 				1F97829C1DD7E74B007EE757 /* main.m in Sources */,

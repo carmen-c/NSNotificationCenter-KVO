@@ -10,6 +10,8 @@
 
 @interface FirstViewController ()
 
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
+@property (nonatomic) NSNumber *stepperValue;
 @end
 
 @implementation FirstViewController
@@ -18,12 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)stepper:(id)sender {
+    
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithDouble: self.stepper.value], @"foo", nil];
+    
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    NSNotification *notification = [[NSNotification alloc]initWithName:@"stepperPressed" object:sender userInfo:dictionary];
+    [notificationCenter postNotification:notification];
+                                
 }
-
 
 @end
