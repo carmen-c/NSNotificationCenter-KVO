@@ -104,6 +104,63 @@
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
         <!--Item-->
+        <scene sceneID="mMP-bM-Xj5">
+            <objects>
+                <viewController id="KCk-oq-zgV" customClass="FourthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8hQ-gq-HTN"/>
+                        <viewControllerLayoutGuide type="bottom" id="xff-Gj-8dk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fqb-ff-o4W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgp-sK-x8a" customClass="whiteView">
+                                <rect key="frame" x="67.5" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="2Y7-Bd-F5Y"/>
+                                    <constraint firstAttribute="height" constant="128" id="WNR-A0-KCj"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2T5-oH-uQQ" appends="YES" id="6YP-2C-KjB"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGP-2p-fan">
+                                <rect key="frame" x="143" y="105" width="89" height="57"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="Nd1-Pk-HlT"/>
+                                    <constraint firstAttribute="height" constant="57" id="RLk-Xv-fP1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iGP-2p-fan" firstAttribute="centerX" secondItem="Fqb-ff-o4W" secondAttribute="centerX" id="ObF-Uu-zkG"/>
+                            <constraint firstItem="iGP-2p-fan" firstAttribute="top" secondItem="8hQ-gq-HTN" secondAttribute="bottom" constant="85" id="UXR-qn-o5a"/>
+                            <constraint firstItem="mgp-sK-x8a" firstAttribute="centerX" secondItem="Fqb-ff-o4W" secondAttribute="centerX" id="pf3-4X-vMW"/>
+                            <constraint firstItem="mgp-sK-x8a" firstAttribute="centerY" secondItem="Fqb-ff-o4W" secondAttribute="centerY" id="udj-Pp-6ws"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Yns-kt-fwY"/>
+                    <connections>
+                        <outlet property="panWhiteView" destination="2T5-oH-uQQ" id="gye-7r-jb8"/>
+                        <outlet property="whiteView" destination="mgp-sK-x8a" id="szM-CM-xYj"/>
+                        <outlet property="yellowView" destination="iGP-2p-fan" id="ci4-gq-cCT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffP-ib-GPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2T5-oH-uQQ">
+                    <connections>
+                        <action selector="panInWhiteView:" destination="KCk-oq-zgV" id="Eel-ND-KCO"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="735.20000000000005" y="1030.4347826086957"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="RiA-Ao-8vx">
             <objects>
                 <viewController id="Zf7-TJ-zBj" customClass="ThirdViewController" sceneMemberID="viewController">
@@ -177,6 +234,7 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="Zf7-TJ-zBj" kind="relationship" relationship="viewControllers" id="1th-Fj-z8b"/>
+                        <segue destination="KCk-oq-zgV" kind="relationship" relationship="viewControllers" id="htG-hE-n7C"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
